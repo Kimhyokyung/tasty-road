@@ -4,5 +4,5 @@
 
 # Software Architecture
 - Go Language
-- Go Gin Web Framework
+- Gin Web Framework
 - WinWheel.js Library
