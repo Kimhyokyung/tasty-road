@@ -12,6 +12,8 @@ func InitRouter() *gin.Engine {
 	r := gin.Default()
 
 	r.LoadHTMLGlob("./templates/layouts/*.html")
+	r.Static("/static", "./static")
+	//r.Use(static.Serve("/static", static.LocalFile("./static", true)))
 
 	r.GET("/", view.ShowIndexPage)
 
@@ -27,6 +29,8 @@ func InitRouter() *gin.Engine {
 		// Router for Restaurants model
 		apiv1.GET("/restaurants", v1.GetRestaurants)
 		apiv1.GET("/restaurant/:id", v1.GetRestaurant)
+
+		apiv1.GET("/lunchs", v1.GetLunchs)
 	}
 
 	return r

@@ -1,11 +1,16 @@
 {{ define "header" }}
     <head>
-        <!--Use the title variable to set the title of the page-->
         <title>{{ .title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
-        <!--Use bootstrap to make the application look nice-->
+
+        {{/* Scripts */}}
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="../../static/js/Winwheel.min.js"></script>
+
+        {{/* CSS */}}
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../../static/css/winWheel.css" />
     </head>
 {{ end }}
